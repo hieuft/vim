@@ -35,5 +35,8 @@ endfunction
 autocmd BufRead *.cpp call Indent()
 autocmd BufWritePre *.cpp call Indent()
 
+" Compile and Run code
 nnoremap <F9> :w <bar> !cmd /v:on /c "((g++ -std=c++17 -c %:r.cpp -o %:r.o && g++ -std=c++17 -o %:r.exe %:r.o -O2 -s -static -Wl,--stack,268435456) & (IF \!ERRORLEVEL\! == 0 ((cd %:h) & (%:r.exe))))"<CR><CR>
+
+" Run code only
 nnoremap <F10> :!cmd /v:on /c "((cd %:h) & (%:r.exe))"<CR><CR>
