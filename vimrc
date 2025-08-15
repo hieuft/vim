@@ -69,7 +69,7 @@ nmap <silent> <leader>bd :bdelete<CR>
 nmap <silent> <leader>bn :bnext<CR>
 nmap <silent> <leader>bp :bprev<CR>
 
-let g:vsnip_snippet_dir = "C:\\Users\\feituh\\vimfiles\\snippets\\"
+let g:vsnip_snippet_dir = "~\\vimfiles\\snippets\\"
 " Expand
 imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
